@@ -15,3 +15,8 @@
  *= require journal/loader
  *= require journal/bootswatch
  */
+
+ #map {
+  width: 800px;
+  height: 400px;
+}
