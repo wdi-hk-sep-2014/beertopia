@@ -16,6 +16,14 @@
  *= require journal/bootswatch
  */
 
+html {
+  background: url(http://th09.deviantart.net/fs71/PRE/f/2010/117/a/9/Old_Bricks_by_BlindScientist.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
  #map {
   width: 800px;
   height: 400px;

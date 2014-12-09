@@ -1,2 +1,72 @@
-about.html.erb
-hi there
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+
+<script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+<script type="text/javascript" src="javascript/jquery.collapsible.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+    //collapsible management
+        $('.collapsible').collapsible({
+            defaultOpen: 'section1,section3'
+        });
+    });
+
+{
+    cssClose: 'collapse-close',
+    cssOpen: 'collapse-open',
+    cookieName: 'collapsible',
+    cookieOptions: {
+        path: '/',
+        expires: 7,
+        domain: '',
+        secure: ''
+    },
+    defaultOpen: '',
+    speed: 300,
+    bind: 'click',
+    animateOpen: function (elem, opts) {
+        elem.next().slideUp(opts.speed);
+    },
+    animateClose: function (elem, opts) {
+        elem.next().slideDown(opts.speed);
+    },
+    loadOpen: function (elem, opts) {
+        elem.next().show();
+    },
+    loadClose: function (elem, opts) {
+        elem.next().hide();
+    }
+}
+</script>
+</head>
+<body>
+
+<div class="collapsible" id="section1">Heading<span></span><div>
+<div class="container">
+    <div class="content">
+        <div>Lorem ipsum</div>
+        <p>Lorem ipsum dolor sit amet, vel eu audiam audire fabulas. Mea prompta debitis ei. Ad nec veri alienum. His ex wisi elitr. Eam lorem sonet explicari eu, suscipit vivendum per ut, ea cum dicat iudico evertitur. Mucius verear incorrupte ne his. Est ad fugit necessitatibus. Amet case id est, ut per propriae apeirian. Mei hinc iusto efficiendi ne, ad mutat aliquando ius. Eam feugiat epicurei patrioque ei, simul forensibus comprehensam mea ne.</p>
+    </div>
+</div>
+<div class="collapsible" id="section2">Heading<span></span><div>
+<div class="container">
+    <div class="content">
+        <div>Lorem ipsum</div>
+        <p>Lorem ipsum dolor sit amet, vel eu audiam audire fabulas. Mea prompta debitis ei. Ad nec veri alienum. His ex wisi elitr. Eam lorem sonet explicari eu, suscipit vivendum per ut, ea cum dicat iudico evertitur. Mucius verear incorrupte ne his. Est ad fugit necessitatibus. Amet case id est, ut per propriae apeirian. Mei hinc iusto efficiendi ne, ad mutat aliquando ius. Eam feugiat epicurei patrioque ei, simul forensibus comprehensam mea ne.</p>
+    </div>
+</div>
+<div class="collapsible" id="section3">Heading<span></span><div>
+<div class="container">
+    <div class="content">
+        <div>Lorem ipsum</div>
+        <p>Lorem ipsum dolor sit amet, vel eu audiam audire fabulas. Mea prompta debitis ei. Ad nec veri alienum. His ex wisi elitr. Eam lorem sonet explicari eu, suscipit vivendum per ut, ea cum dicat iudico evertitur. Mucius verear incorrupte ne his. Est ad fugit necessitatibus. Amet case id est, ut per propriae apeirian. Mei hinc iusto efficiendi ne, ad mutat aliquando ius. Eam feugiat epicurei patrioque ei, simul forensibus comprehensam mea ne.</p>
+    </div>
+</div>
+
+</body>
+</html>
+
