@@ -30,6 +30,14 @@
   </tbody>
 </table>
 
+<div id="sidebar">
+  <% @breweries.each do |brewery| %>
+    <h2><%= brewery.name %></h2>
+    <p><%= brewery.description %></p>
+    <hr>
+  <% end %>
+</div>
+
 <div id="map"></div>
 
 <br>
