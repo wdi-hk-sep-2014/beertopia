@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20141211035307) do
 
   create_table "items", force: true do |t|
     t.string   "name"
-    t.string   "desciption"
+    t.text     "desciption"
     t.string   "category"
     t.float    "price"
     t.integer  "quantity"

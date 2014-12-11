@@ -9,10 +9,6 @@ gem 'pg'
 gem 'sass-rails', '~> 4.0.3'
 # twitter bootstrap
 gem "twitter-bootstrap-rails"
-# twitter bootstrap css & javascript toolkit
-gem 'twitter-bootswatch-rails', '~> 3.2.0'
-# twitter bootstrap helpers gem, e.g., alerts etc...
-gem 'twitter-bootswatch-rails-helpers'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views

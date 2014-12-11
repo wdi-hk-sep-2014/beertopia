@@ -44,6 +44,7 @@ html {
   font-family: "capsmall";
   font-size: 35px;
   font-color: black;
+  float: left;
 }
 
 #listen {
