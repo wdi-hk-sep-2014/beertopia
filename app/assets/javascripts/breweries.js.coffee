@@ -28,7 +28,8 @@
     handler.fitMapToBounds()
 
 $ ->
-  $.ajax
-    url: '/breweries.json'
-  .done (data) ->
-    convert data
+  if $('#map').length >= 1
+    $.ajax
+      url: '/breweries.json'
+    .done (data) ->
+      convert data

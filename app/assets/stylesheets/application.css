@@ -16,8 +16,19 @@
  *= require journal/bootswatch
  */
 
+@font-face {
+  font-family: "Capsmall";
+  src: url("/assets/capsmall.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Koyu";
+  src: url("/assets/futura koyu.ttf") format("truetype");
+}
+
+
 html {
-  background: url(http://th09.deviantart.net/fs71/PRE/f/2010/117/a/9/Old_Bricks_by_BlindScientist.jpg) no-repeat center center fixed;
+  background: url(Old_Bricks_by_BlindScientist.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -30,7 +41,12 @@ html {
 }
 
 .navbar-brand {
-  font-style:
+  font-family: "capsmall";
+  font-size: 35px;
+  font-color: black;
+}
 
-
+#listen {
+  font-family: "Futura Koyu";
+  font-size: 25px;
 }
