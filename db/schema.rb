@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20141211103016) do
 
   create_table "breweries", force: true do |t|
     t.string   "name"
-    t.string   "description"
+    t.text     "description"
     t.string   "address"
     t.string   "phone"
     t.float    "lat"
