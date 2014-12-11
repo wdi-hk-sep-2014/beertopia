@@ -3,8 +3,8 @@ class CreateBreweries < ActiveRecord::Migration
     create_table :breweries do |t|
       t.string :name
       t.string :description
-      t.string :phone
       t.string :address
+      t.string :phone
       t.float :lat
       t.float :lng
 

@@ -1,6 +1,6 @@
 <h1>Listing breweries</h1>
 
-<table>
+<table id="activity-data-table" class="table-bordered table-striped table-hover table-condensed" cellspacing="0" width="100%">
   <thead>
     <tr>
       <th>Name</th>
@@ -29,6 +29,14 @@
     <% end %>
   </tbody>
 </table>
+
+<div id="sidebar">
+  <% @breweries.each do |brewery| %>
+    <h2><%= brewery.name %></h2>
+    <p><%= brewery.description %></p>
+    <hr>
+  <% end %>
+</div>
 
 <div id="map"></div>
 

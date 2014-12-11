@@ -16,7 +16,49 @@
  *= require journal/bootswatch
  */
 
+@font-face {
+  font-family: "Capsmall";
+  src: url("/assets/capsmall.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Koyu";
+  src: url("/assets/futura koyu.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Oblique";
+  src: url("/assets/futura oblique.ttf") format("truetype");
+}
+
+
+html {
+  background: url(Old_Bricks_by_BlindScientist.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
  #map {
   width: 800px;
   height: 400px;
+}
+
+.navbar-brand {
+  font-family: "capsmall";
+  font-size: 35px;
+  font-color: black;
+  float: left;
+}
+
+#listen {
+  font-family: "Futura Koyu";
+  font-size: 25px;
+}
+
+.parent {
+  font-family: "Futura Oblique";
+  font-size: 25px;
+
 }
