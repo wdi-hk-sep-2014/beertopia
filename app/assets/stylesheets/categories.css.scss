@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#craft_beers {
+.cat_image {
   background-position: 50% 50%;
   color: rgb(0, 136, 204);
   float: left;
@@ -13,65 +13,30 @@
   z-index: 0;
   perspective-origin: 115px 215.5px;
   transform-origin: 115px 215.5px;
-  background: rgba(0, 0, 0, 0) url('/assets/craft beer lineup.jpg') no-repeat scroll 50% 50% / auto padding-box border-box;
   border: 0px none rgb(0, 136, 204);
   font: normal normal normal normal 19px/20px futura_ltbook, serif;
   outline: rgb(0, 136, 204) none 0px;
   transition: all 0.3s ease-out 0s;
+}
+
+#craft_beers {
+  background: rgba(0, 0, 0, 0) url('/assets/craft beer lineup.jpg') no-repeat scroll 50% 50% / auto padding-box border-box;
+
 }
 
 #brew_kits {
-  background-position: 50% 50%;
-  color: rgb(0, 136, 204);
-  float: left;
-  height: 431px;
-  letter-spacing: 1px;
-  text-align: center;
-  width: 230px;
-  z-index: 0;
-  perspective-origin: 115px 215.5px;
-  transform-origin: 115px 215.5px;
   background: rgba(0, 0, 0, 0) url('/assets/basic-beer-kit.jpg') no-repeat scroll 50% 50% / auto padding-box border-box;
-  border: 0px none rgb(0, 136, 204);
-  font: normal normal normal normal 19px/20px futura_ltbook, serif;
-  outline: rgb(0, 136, 204) none 0px;
-  transition: all 0.3s ease-out 0s;
+
 }
 
 #ingredients {
-  background-position: 50% 50%;
-  color: rgb(0, 136, 204);
-  float: left;
-  height: 431px;
-  letter-spacing: 1px;
-  text-align: center;
-  width: 230px;
-  z-index: 0;
-  perspective-origin: 115px 215.5px;
-  transform-origin: 115px 215.5px;
   background: rgba(0, 0, 0, 0) url('/assets/ingredients.jpg') no-repeat scroll 50% 50% / auto padding-box border-box;
-  border: 0px none rgb(0, 136, 204);
-  font: normal normal normal normal 19px/20px futura_ltbook, serif;
-  outline: rgb(0, 136, 204) none 0px;
-  transition: all 0.3s ease-out 0s;
+
 }
 
 #accessories {
-  background-position: 50% 50%;
-  color: rgb(0, 136, 204);
-  float: left;
-  height: 431px;
-  letter-spacing: 1px;
-  text-align: center;
-  width: 230px;
-  z-index: 0;
-  perspective-origin: 115px 215.5px;
-  transform-origin: 115px 215.5px;
   background: rgba(0, 0, 0, 0) url('/assets/accessories.jpg') no-repeat scroll 50% 50% / auto padding-box border-box;
-  border: 0px none rgb(0, 136, 204);
-  font: normal normal normal normal 19px/20px futura_ltbook, serif;
-  outline: rgb(0, 136, 204) none 0px;
-  transition: all 0.3s ease-out 0s;
+
 }
 
 

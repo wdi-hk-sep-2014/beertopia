@@ -8,13 +8,18 @@
     </tr>
   </thead>
 <div id="categories_list">
-  <a href="<%= url_for @categories.first %>"><div id="craft_beers"></div></a>
-
-  <a href="<%= url_for @categories.second %>"><div id="brew_kits"></div></a>
-
-  <a href="<%= url_for @categories.third %>"><div id="ingredients"></div></a>
-
-  <a href="<%= url_for @categories.fourth %>"><div id="accessories"></div></a>
+  <a href="<%= url_for @categories.first %>">
+    <div id="craft_beers" class="cat_image"><div class='cat_name'>Craft Beer</div></div>
+  </a>
+  <a href="<%= url_for @categories.second %>">
+    <div id="brew_kits" class="cat_image"></div>
+  </a>
+  <a href="<%= url_for @categories.third %>">
+    <div id="ingredients" class="cat_image"></div>
+  </a>
+  <a href="<%= url_for @categories.fourth %>">
+    <div id="accessories" class="cat_image"></div>
+  </a>
 </div>
   <tbody>
     <% @categories.each do |category| %>
