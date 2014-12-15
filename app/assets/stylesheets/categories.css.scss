@@ -1,3 +1,67 @@
 // Place all the styles related to the Categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.cat_image {
+  background-position: 50% 50%;
+  color: rgb(0, 136, 204);
+  float: left;
+  height: 431px;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 230px;
+  z-index: 0;
+  perspective-origin: 115px 215.5px;
+  transform-origin: 115px 215.5px;
+  border: 0px none rgb(0, 136, 204);
+  font: normal normal normal normal 19px/20px futura_ltbook, serif;
+  outline: rgb(0, 136, 204) none 0px;
+  transition: all 0.3s ease-out 0s;
+}
+
+.cat_name {
+  font-family: "Futura Koyu";
+  padding: 25%;
+  font-size: 25px;
+
+
+}
+// #categories_list{
+//   opacity: 0.7;
+
+//   &:hover{
+//     opacity: 1;
+//   }
+// }
+
+#categories_list:hover  {
+  opacity: 1;
+
+.cat_image:hover {
+  opacity: 0.5 !important;
+}
+
+
+}
+
+#craft_beers {
+  background: rgba(0, 0, 0, 0) url('/assets/craft beer lineup.jpg') no-repeat scroll 50% 50% / auto padding-box border-box;
+
+}
+
+#brew_kits {
+  background: rgba(0, 0, 0, 0) url('/assets/basic-beer-kit.jpg') no-repeat scroll 50% 50% / auto padding-box border-box;
+
+}
+
+#ingredients {
+  background: rgba(0, 0, 0, 0) url('/assets/ingredients3.jpg') no-repeat scroll 50% 50% / auto padding-box border-box;
+
+}
+
+#accessories {
+  background: rgba(0, 0, 0, 0) url('/assets/accessories.jpg') no-repeat scroll 50% 50% / auto padding-box border-box;
+
+}
+
+
