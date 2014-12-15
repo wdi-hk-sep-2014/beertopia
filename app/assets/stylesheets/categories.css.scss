@@ -19,6 +19,31 @@
   transition: all 0.3s ease-out 0s;
 }
 
+.cat_name {
+  font-family: "Futura Koyu";
+  padding: 25%;
+  font-size: 25px;
+
+
+}
+// #categories_list{
+//   opacity: 0.7;
+
+//   &:hover{
+//     opacity: 1;
+//   }
+// }
+
+#categories_list:hover  {
+  opacity: 1;
+
+.cat_image:hover {
+  opacity: 0.5 !important;
+}
+
+
+}
+
 #craft_beers {
   background: rgba(0, 0, 0, 0) url('/assets/craft beer lineup.jpg') no-repeat scroll 50% 50% / auto padding-box border-box;
 
@@ -30,7 +55,7 @@
 }
 
 #ingredients {
-  background: rgba(0, 0, 0, 0) url('/assets/ingredients.jpg') no-repeat scroll 50% 50% / auto padding-box border-box;
+  background: rgba(0, 0, 0, 0) url('/assets/ingredients1.jpg') no-repeat scroll 50% 50% / auto padding-box border-box;
 
 }
 
