@@ -1,10 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @items.to_json %>
-  <%= @category.name %>
-</p>
+  <% @items.each do |item| %>
+    <p><%= item.name %> for the price <%= item.price %>
+     and it's image path is <%= item.image_path %><img src="/assets/<%= item.image_path %>" class="item-image"></p>
+  <% end %>
 
 
 
