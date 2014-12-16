@@ -1,46 +1,17 @@
-<h1>Listing categories</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-<div class="container-fluid">
-    <div class="row">
-      <!-- <div class="col-md-2"></div> -->
-      <div class="col-md-8 col-md-offset-2">
-        <div id="categories_list">
-          <a href="<%= url_for @categories.first %>">
-            <div id="craft_beers" class="cat_image"><div class='cat_name'>Craft Beers</div></div>
-          </a>
-          <a href="<%= url_for @categories.second %>">
-            <div id="brew_kits" class="cat_image"><div class='cat_name'>Brew Kits</div></div>
-          </a>
-          <a href="<%= url_for @categories.third %>">
-            <div id="ingredients" class="cat_image"><div class='cat_name'>Ingredients</div></div>
-          </a>
-          <a href="<%= url_for @categories.fourth %>">
-            <div id="accessories" class="cat_image"><div class='cat_name'>Accessories</div></div>
-          </a>
-        </div>
-      <!-- <div class="col-md-2"></div> -->
-      </div>
-  </div>
+<div id="categories_list">
+  <a href="<%= url_for Category.find_by_name('Craft Beer') %>">
+    <div id="craft_beers" class="cat_image"><div class='cat_name'>Craft Beers</div></div>
+  </a>
+  <a href="<%= url_for Category.find_by_name('Brewing Kits') %>">
+    <div id="brew_kits" class="cat_image"><div class='cat_name'>Brew Kits</div></div>
+  </a>
+  <a href="<%= url_for Category.find_by_name('Ingredients') %>">
+    <div id="ingredients" class="cat_image"><div class='cat_name'>Ingredients</div></div>
+  </a>
+  <a href="<%= url_for Category.find_by_name('Accessories') %>">
+    <div id="accessories" class="cat_image"><div class='cat_name'>Accessories</div></div>
+  </a>
 </div>
-  <tbody>
-    <% @categories.each do |category| %>
-      <tr>
-        <td><%= category.name %></td>
-        <td><%= link_to 'Show', category %></td>
-        <td><%= link_to 'Edit', edit_category_path(category) %></td>
-        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
 
-<%= link_to 'New Category', new_category_path %>
+

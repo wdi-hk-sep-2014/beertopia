@@ -32,8 +32,8 @@
 }
 
 
-html {
-  background: url(Old_Bricks_by_BlindScientist.jpg) no-repeat center center fixed;
+body {
+  /*background: url(Old_Bricks_by_BlindScientist.jpg) no-repeat center center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -47,10 +47,39 @@ html {
 
 .navbar-brand {
   font-family: "capsmall";
-  font-size: 50px;
+  font-size: 65px;
   font-color: #FFFFFF;
   float: left;
-  padding-top: 48px;
+  padding-top: 130px;
+  -webkit-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
+  @-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
 }
 
 #listen {
@@ -67,14 +96,13 @@ html {
   font-family: "Futura Koyu";
   font-size: 18px;
   float: right;
+  list-style-type: none;
 }
 
 .navbar-content {
   padding-top: 15px;
 
 }
-
-body { padding-top: 50px; }
 
 #myCarousel .carousel-caption {
   left:0;
@@ -107,3 +135,12 @@ body { padding-top: 50px; }
   .carousel-caption p,
   #myCarousel .list-group {display:none;}
 }
+
+.arrow-up, .arrow-down {
+  font-size: 18px;
+}
+
+.parent h2 {
+  cursor: pointer;
+}
+
