@@ -4,7 +4,8 @@
 
 $ ->
   $('h2').click (e) ->
-    $(e.target).next().slideToggle()
+    $(e.currentTarget).next().slideToggle()
+    $(e.currentTarget).find('.arrow-up, .arrow-down').toggle()
 
 $(document).ready ->
   clickEvent = false
