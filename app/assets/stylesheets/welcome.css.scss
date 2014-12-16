@@ -1,19 +1,47 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.video {
+.video1 {
   float: right;
   padding-right: 30px;
 }
 
+.video2 {
+  float: right;
+  padding-right: 30px;
+}
+
+.video3 {
+  float: right;
+  padding-right: 30px;
+}
+
+.parent {
+  font-size: 30px;
+  background-color: rgba(255,255,255,0.55);
+  line-height: 1em;
+  max-width: 50%;
+}
+
+.content {
+  color: #2C2C2C;
+
+}
 
 #myCarousel {
   font-family: "Futura Oblique";
-  font-size: 25px;
+  font-size: 18px;
+}
+
+.carousel-caption {
+  line-height: 0.9em;
 }
 
 .well {
   background-image: url("/assets/FileItem-266529-Beertaps1copy.jpg");
   font-family: "Futura Oblique";
   font-weight: 500;
+  color: white;
+  max-width: 1125px;
 }
+

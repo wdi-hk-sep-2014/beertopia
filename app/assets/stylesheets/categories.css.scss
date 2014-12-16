@@ -17,6 +17,7 @@
   font: normal normal normal normal 19px/20px futura_ltbook, serif;
   outline: rgb(0, 136, 204) none 0px;
   transition: all 0.3s ease-out 0s;
+  background-color: #fff;
 }
 
 .cat_name {
@@ -26,22 +27,24 @@
 
 
 }
-// #categories_list{
-//   opacity: 0.7;
 
-//   &:hover{
-//     opacity: 1;
-//   }
-// }
+#categories_list {
+  margin-left: auto;
+  margin-right: auto;
+  width: 920px;
 
-#categories_list:hover  {
-  opacity: 1;
-
-.cat_image:hover {
-  opacity: 0.5 !important;
 }
 
+.cat_image {
+  background-color: white;
+}
 
+#categories_list:hover .cat_image  {
+  opacity: 0.5;
+}
+
+#categories_list:hover .cat_image:hover {
+  opacity: 1 !important;
 }
 
 #craft_beers {
@@ -56,12 +59,15 @@
 
 #ingredients {
   background: rgba(0, 0, 0, 0) url('/assets/ingredients3.jpg') no-repeat scroll 50% 50% / auto padding-box border-box;
-
+  background-color: #fff;
 }
 
 #accessories {
   background: rgba(0, 0, 0, 0) url('/assets/accessories.jpg') no-repeat scroll 50% 50% / auto padding-box border-box;
 
 }
+
+
+
 
 
