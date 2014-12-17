@@ -24,6 +24,7 @@
   font-family: "Futura Koyu";
   padding: 25%;
   font-size: 25px;
+  color: rgba(111, 116, 111, 0.86);
 
 
 }
@@ -67,12 +68,17 @@
 
 }
 
-.item-image {
-  width: 200px;
-  height: 200px;
-
+.thumbnail {
+  width: 390px;
+  height: 446px;
+  opacity: 0.9;
 }
 
+.thumbnail .item-image {
+  width: 200px;
+  height: 200px;
+  opacity: 1.0;
+}
 
 
 

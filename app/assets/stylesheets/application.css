@@ -33,53 +33,28 @@
 
 
 body {
-  /*background: url(Old_Bricks_by_BlindScientist.jpg) no-repeat center center fixed;*/
+  background: url(Old_Bricks_by_BlindScientist.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
- #map {
-  width: 800px;
-  height: 400px;
-}
 
 .navbar-brand {
   font-family: "capsmall";
-  font-size: 65px;
-  font-color: #FFFFFF;
+  font-size: 83px;
+  color: #FFF;
   float: left;
-  padding-top: 130px;
-  -webkit-animation-name: fadeInRightBig;
-  animation-name: fadeInRightBig;
-  @-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
-  }
+  padding-top: 100px;
 
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
 }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
-  }
 
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
+
+
+.navbar-inverse .navbar-brand {
+  color: #FFF;
 }
 
 #listen {
@@ -97,11 +72,12 @@ body {
   font-size: 18px;
   float: right;
   list-style-type: none;
+  margin-bottom: 0px;
+  color: #FFF;
 }
 
-.navbar-content {
-  padding-top: 15px;
-
+.navbar-content ul {
+  color: #FFF;
 }
 
 #myCarousel .carousel-caption {
@@ -144,3 +120,67 @@ body {
   cursor: pointer;
 }
 
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+            transform: translate3d(0, -2000px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+            transform: translate3d(0, -2000px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+          animation-name: fadeInDownBig;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}

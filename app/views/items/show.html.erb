@@ -1,19 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @item.name %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @item.description %>
-</p>
+<div class="row">
+  <div id="itemdetail">
+    <div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+      <div class="thumbnail">
+        <img src="/assets/<%= @item.image_path %>" class="item-image">
+        <div class="caption">
+          <h3><%= @item.name %></h3>
+          <p><%= @item.description %></p>
+          <p>Price $ <%= @item.price %><a href="#" class="btn btn-success" role="button">Buy</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<p>
-  <strong>Price:</strong>
-  <%= @item.price %>
-</p>
 
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+</div>
+
+
