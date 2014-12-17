@@ -53,6 +53,7 @@ body {
 
 
 
+
 .navbar-inverse .navbar-brand {
   color: #FFF;
 }
@@ -67,13 +68,22 @@ body {
   font-size: 25px;
 }
 
-.navbar-content {
+.navbar-content  {
   font-family: "Futura Koyu";
   font-size: 18px;
   float: right;
   list-style-type: none;
   margin-bottom: 0px;
   color: #FFF;
+}
+
+.navbar-content a {
+  color: #B7B8BC;
+}
+
+.navbar-content a:hover {
+  color: #FFF;
+  text-decoration: none;
 }
 
 .navbar-content ul {
