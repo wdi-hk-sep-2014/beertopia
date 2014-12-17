@@ -28,8 +28,8 @@
 
 .content {
   color: #2C2C2C;
-
 }
+
 
 #myCarousel {
   font-family: "Futura Oblique";
@@ -41,14 +41,16 @@
 }
 
 .well {
-  background-image: url("/assets/FileItem-266529-Beertaps1copy.jpg");
+  background-image: url("/assets/Beertaps2.jpg");
   font-family: "Futura Oblique";
   font-weight: 500;
-  color: white;
+  color: #FFF;
   width: 600px;
-  height: 200px;
+  height: 190px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+  background-color: #3B3734;
 }
 
 
@@ -61,6 +63,11 @@
   color: #FFF;
   padding-left: 280px;
 }
+
+.topheader h1 {
+  opacity: 1;
+}
+
 
 #footer {
   background-color: black;
