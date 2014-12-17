@@ -10,6 +10,8 @@ class ItemsController < ApplicationController
   # GET /items/1
   # GET /items/1.json
   def show
+    item_id = params[:id]
+    @item = Item.where(id: item_id)[0]
   end
 
   # GET /items/new

@@ -68,12 +68,17 @@
 
 }
 
-.item-image {
-  width: 200px;
-  height: 200px;
-
+.thumbnail {
+  width: 390px;
+  height: 446px;
+  opacity: 0.9;
 }
 
+.thumbnail .item-image {
+  width: 200px;
+  height: 200px;
+  opacity: 1.0;
+}
 
 
 

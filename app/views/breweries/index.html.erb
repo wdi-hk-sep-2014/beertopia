@@ -1,13 +1,30 @@
-<h1>Listing Breweries and Pubs</h1>
+<div class="container-fluid">
+  <div class="row">
+    <!-- left column -->
+    <div class="col-xs-6">
+      <div id="sidebar">
+        <% @breweries.each do |brewery| %>
+          <h2><%= brewery.name %>
+          <span class="arrow-up">&#9658;</span>
+          <span style="display: none;" class="arrow-down">&#9660;</span>
+          </h2>
+          <div style="display: none;">
+            <p><%= brewery.description %></p>
+            <p><%= brewery.address %></p>
 
-<div id="map"></div>
+            <p>Tel : <%= brewery.phone %></p>
+          </div>
+         <strong><hr></strong>
 
-<div id="sidebar">
-  <% @breweries.each do |brewery| %>
-    <h2><%= brewery.name %></h2>
-    <p><%= brewery.description %></p>
-    <hr>
-  <% end %>
+        <% end %>
+      </div>
+    </div>
+    <!-- right column -->
+    <div class="col-xs-6">
+      <div id="map"></div>
+    </div>
+
+  </div>
 </div>
 
 

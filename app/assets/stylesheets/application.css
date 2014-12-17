@@ -40,17 +40,13 @@ body {
   background-size: cover;
 }
 
- #map {
-  width: 800px;
-  height: 400px;
-}
 
 .navbar-brand {
   font-family: "capsmall";
   font-size: 83px;
   font-color: #FFFFFF;
   float: left;
-  padding-top: 130px;
+  padding-top: 100px;
 
 }
 
@@ -69,11 +65,7 @@ body {
   font-size: 18px;
   float: right;
   list-style-type: none;
-}
-
-.navbar-content {
-  padding-top: 15px;
-
+  margin-bottom: 0px;
 }
 
 #myCarousel .carousel-caption {

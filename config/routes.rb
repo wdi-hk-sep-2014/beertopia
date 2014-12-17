@@ -13,6 +13,10 @@ Rails.application.routes.draw do
 
   get 'about' => 'welcome#about'
 
+  get 'top10' => 'welcome#top10'
+
+  get 'homebrew' => 'welcome#homebrew'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,3 +1,31 @@
 // Place all the styles related to the Breweries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ #map {
+  width: 700px;
+  height: 500px;
+  float: right;
+}
+
+#sidebar {
+  float: left;
+  width: 500px;
+  max-height: 500px;
+  overflow: scroll;
+  background-color: #FFF;
+  opacity: 0.9;
+  font-family: "Futura Oblique";
+  padding-left: 15px;
+}
+
+#sidebar h2 {
+  font-size: 18px;
+  // margin-top: ;
+  // margin-bottom: ;
+}
+
+#sidebar p {
+  font-size: 15px;
+
+}
+
